@@ -70,7 +70,9 @@ Note that `flash-attn` needs to be installed separately to avoid [errors during 
 
 # Run demo
 ```
-python scripts/run_demo.py --left_file ./assets/frame_015314.jpg --right_file ./assets/frame_015395.jpg --ckpt_dir ./pretrained_models/23-51-11/model_best_bp2.pth --out_dir ./test_outputs/ --hiera 1 --get_pc 0
+python scripts/run_demo.py --left_file ./assets/shrimp/left.jpg --right_file ./assets/shrimp/right.jpg --ckpt_dir ./pretrained_models/23-51-11/model_best_bp2.pth --out_dir ./outputs/shrimp/ --hiera 1 --get_pc 0
+python scripts/run_demo.py --left_file ./assets/shrimp_enhanced/left.png --right_file ./assets/shrimp_enhanced/right.png --ckpt_dir ./pretrained_models/23-51-11/model_best_bp2.pth --out_dir ./outputs/shrimp_enhanced/ --hiera 1 --get_pc 0
+python scripts/run_demo.py --left_file ./assets/shrimp_masked/left.png --right_file ./assets/shrimp_masked/right.png --ckpt_dir ./pretrained_models/23-51-11/model_best_bp2.pth --out_dir ./outputs/shrimp_masked/ --hiera 1 --get_pc 0
 ```
 You can see output point cloud.
 

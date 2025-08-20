@@ -85,6 +85,8 @@ if __name__=="__main__":
   vis = vis_disparity(disp)
   vis = np.concatenate([img0_ori, vis], axis=1)
   imageio.imwrite(f'{args.out_dir}/vis.png', vis)
+  # 儲存每個像素的 disparity array
+  np.save(f'{args.out_dir}/disparity.npy', disp)
   logging.info(f"Output saved to {args.out_dir}")
 
   if args.remove_invisible:
